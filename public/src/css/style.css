@@ -1,0 +1,41 @@
+
+body {
+    background-image: url(../image/backGround.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#submit-data {
+    display: block;
+    width: 300px;
+    margin: auto;
+}
+
+#container-form {
+    max-width: 500px;
+    margin: 5% auto;
+    border-radius: 10px;
+    padding: 20px; 
+    height: 500px;
+}
+
+#about-more-link {
+    cursor: pointer;
+}
+
+#about-more-link:hover {
+    text-decoration: underline;
+}
+
+#message-success-and-error {
+    max-width: 500px; 
+    opacity: 0 ;
+    position: absolute; 
+    right: 10px;
+    top: 25px;
+}
+
+.active-status {
+    opacity: 100%;
+}

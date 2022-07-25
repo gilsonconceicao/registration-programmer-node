@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>The programmer - map</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <style>
+        #languages-front-end {
+            margin-top: 12vh;
+        }
+
+        #flex-about {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        #flex-about div {
+            margin: 10px 0;
+        }
+
+        #flex-about img {
+            display: block;
+            height: 200px;
+
+        }
+
+        .navbar {
+            z-index: 20;
+        }
+
+        #front-end-container {
+            display: none;
+        }
+
+        .icon-change-theme {
+            margin: 0 10px;
+            background-color: #1e8fff33;
+            padding: 5px 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all .5s;
+        }
+
+        .icon-change-theme:hover {
+            background-color: #04325ff6;
+            color: white;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg position-fixed w-100 top-0 navbar-light bg-light">
+        <div class="container">
+            <i id="icon-header" class="bi bi-book-half mx-2"></i>
+            <a id="title-nav" class="navbar-brand" href="#intro">The Map Programmer</a>
+            <!-- toggle menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- links menu -->
+            <div class="collapse navbar-collapse col justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#topics">Front-end</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#depoiments">Back-end</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conteiner-prices">Languages</a>
+                    </li>
+
+                    <li class="nav-item d-none d-md-inline">
+                        <a href="" class="btn btn-outline-dark">buy now</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="my-5 container-sm">
+        <h2 class="px-5" id="languages-front-end">Front-end</h2>
+        <div id="flex-about">
+            <div class="card" style="width: 18rem;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+                    class="card-img-top" alt="imagejavascript">
+                <div class="card-body">
+                    <h5 class="card-title">JavaScript</h5>
+                    <p class="card-text">Conheça a capacidade dessa linguagem, uma das mais utilizadas no mundo. </p>
+                    <a href="#" class="btn btn-primary">Começar o curso</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://reactjs.org/logo-og.png" class="card-img-top" alt="imagereact">
+                <div class="card-body">
+                    <h5 class="card-title">React JS</h5>
+                    <p class="card-text">Uma mistura de JS com react. Uma super biblioteca com a capacidade gigantesca
+                        de criar interface profissionais.</p>
+                    <a href="#" class="btn btn-primary">Começar o curso</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://maanavanlearncode.com/wp-content/uploads/2020/12/React-Native-Titre.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">React Native</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Começar o curso</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Angular </h5>
+                    <p class="card-text">Criada pelos desenvolvedores do Google. Para construção de interfaces de
+                        aplicações HTML, CSS e JS.</p>
+                    <a href="#" class="btn btn-primary">Começar o curso</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/555px-Vue.js_Logo_2.svg.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Vue JS</h5>
+                    <p class="card-text">framework JavaScript de código-aberto, focado no desenvolvimento de interfaces
+                        de usuário e aplicativos de página única</p>
+                    <a href="#" class="btn btn-primary">Começar o curso</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://getbootstrap.com.br/docs/4.1/assets/img/bootstrap-stack.png" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bootstrap</h5>
+                    <p class="card-text">Bootstrap é um framework web com código-fonte aberto para desenvolvimento de
+                        componentes de interface e front-end para sites e aplicações web usando HTML, CSS e JavaScript
+                    </p>
+                    <a href="#" class="btn btn-primary">Começar o curso</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-5 container-sm">
+        <h2 class="px-5" id="languages-front-end">Back-end</h2>
+        <div id="flex-about">
+            <div class="card" style="width: 18rem;">
+                <img src="https://static.imasters.com.br/wp-content/uploads/2018/06/22153245/php-post-1.png"
+                    class="card-img-top" alt="imagejavascript">
+                <div class="card-body">
+                    <h5 class="card-title">PHP</h5>
+                    <p class="card-text">PHP é uma linguagem interpretada livre, usada originalmente apenas para o
+                        desenvolvimento de aplicações presentes e atuantes no lado do servidor </p>
+                    <a href="#" class="btn btn-primary">Começar o curso</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://logosmarcas.net/wp-content/uploads/2021/10/Python-Emblema.jpg" class="card-img-top"
+                    alt="imagereact">
+                <div class="card-body">
+                    <h5 class="card-title">Python</h5>
+                    <p class="card-text">Python é uma linguagem de programação de alto nível, interpretada de script,
+                        imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte</p>
+                    <a href="#" class="btn btn-primary">Começar o curso</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://walde.co/wp-content/uploads/2016/09/nodejs_logo.png" class="card-img-top"
+                    style="width: 75%; margin: auto;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Node JS</h5>
+                    <p class="card-text">Software de código aberto, multiplataforma, baseado no interpretador V8 do
+                        Google e que permite a execução de códigos JavaScript fora de um navegador web</p>
+                    <a href="#" class="btn btn-primary">Começar o curso</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/306px-ISO_C%2B%2B_Logo.svg.png"
+                    style="width: 75%; margin: auto;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">C++ </h5>
+                    <p class="card-text">C++ é uma linguagem de programação compilada multi-paradigma e de uso geral.
+                        Desde os anos 1990 é uma das linguagens comerciais mais populares. </p>
+                    <a href="#" class="btn btn-primary">Começar o curso</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/200px-C_Sharp_wordmark.svg.png"
+                    style="width: 75%; margin: auto;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">C#</h5>
+                    <p class="card-text">C# é uma linguagem de programação, multiparadigma, de tipagem forte,
+                        desenvolvida pela Microsoft como parte da plataforma .NET.</p>
+                    <a href="#" class="btn btn-primary">Começar o curso</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://embarcados.com.br/wp-content/uploads/2014/03/imagem-de-destaque-28-850x510.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Java</h5>
+                    <p class="card-text">Java é uma linguagem de programação baseado na orientação por objeto
+                        desenvolvida na década de 90, baseada na linguagem C</p>
+                    <a href="#" class="btn btn-primary">Começar o curso</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous">
+</script>
+</html>
