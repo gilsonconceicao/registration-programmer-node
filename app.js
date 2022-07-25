@@ -40,7 +40,7 @@ app.post('/cadastroProgrammer', async (req, res) => {
 })
 
 // connect mongodb
-const uri = 'mongodb+srv://GilsonConceicao:KjPHha8simxsyzbe@cluster0.gnlyf.mongodb.net/bancoFirstApi?retryWrites=true&w=majority'
+const uri = 'mongodb+srv://GilsonConceicao:{passwoerd}@cluster0.gnlyf.mongodb.net/{nameofbank}?retryWrites=true&w=majority'
 
 mongodb.connect(uri)
     .then(
